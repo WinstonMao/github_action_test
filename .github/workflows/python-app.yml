@@ -52,7 +52,7 @@ permissions:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ inputs.operating_system }}
 
     steps:
     - uses: actions/checkout@v3
