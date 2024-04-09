@@ -6,17 +6,17 @@ run-name: Run Python application
 
 on:
   workflow_dispatch:
-  inputs:
-    operating_system:
-    description: 'OS'
-    required: true
-    default: 'self-hosted-ARM64'
-    type: choice
-    options:
-      - self-hosted-X64
-      - self-hosted-ARM64
-      - macos-11
-      - macos-12
+    inputs:
+      operating_system:
+      description: 'OS'
+      required: true
+      default: 'self-hosted-ARM64'
+      type: choice
+      options:
+        - self-hosted-X64
+        - self-hosted-ARM64
+        - macos-11
+        - macos-12
 
 permissions:
   contents: read
