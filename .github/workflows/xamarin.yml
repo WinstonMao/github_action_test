@@ -1,6 +1,13 @@
 name: Build Xamarin.Android app
 
-on: [push]
+on:
+  workflow_call:
+    inputs:
+      username:
+        description: 'A username passed from the caller workflow'
+        default: 'john-doe'
+        required: false
+        type: string
 
 jobs:
   build:
